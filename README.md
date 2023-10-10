@@ -80,6 +80,6 @@ You can view the transaction history for the smart contract on the Goerli testne
 URL: https://goerli.etherscan.io/address/0x9f0e77b190b52afe2413efbe551e503dffd95f10
 
 ## Snapshots
-![Screenshot (47)](https://github.com/ayushete02/Tegro/assets/75811912/e1445c9b-38f6-4ab4-8252-7d8d0a66ff19)
+![Screenshot (48)](https://github.com/ayushete02/Tegro/assets/75811912/36441a5a-d6c5-416e-bd95-8fc725290c4c)
 ![Screenshot (45)](https://github.com/ayushete02/Tegro/assets/75811912/b7e29dbe-65ea-494d-8c53-057fdb255342)
 ![Screenshot (46)](https://github.com/ayushete02/Tegro/assets/75811912/23455b7c-36e3-44b4-8168-cdc9ff61d45e)
