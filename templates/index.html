@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger Web Application</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Ledger Web Application</h1>
+    <div class="container">
+        <form action="/add" method="POST">
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required><br>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required><br>
+
+            <button type="submit">Add Entry</button>
+        </form>
+
+        <h2>Ledger Entries:</h2>
+        <ul>
+            {% for entry in entries %}
+            <li>
+                <p><strong>Description:</strong> {{ entry[1] }}</p>
+                <p><strong>Amount:</strong> {{ entry[2] }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="feedback">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>
